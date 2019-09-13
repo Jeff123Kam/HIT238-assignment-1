@@ -1,6 +1,6 @@
-/*--------------*/
+
 /* BASIC SETUP */
-/*--------------*/
+
 
 * {
     padding: 0;
@@ -14,9 +14,9 @@ html {
 }
 
 
-/*--------------*/
+
 /* REUSABLE COMPONENTS */
-/*--------------*/
+
 
 .row {
     max-width: 1140px;
@@ -80,7 +80,6 @@ h3 {
     line-height: 140%;
 }
 
-/*----icons----*/
 
 .icon-big {
     font-size: 350%;
@@ -140,7 +139,7 @@ header{
 }
 
 
-
+/* top attraction */
 .top-attraction{
     background-color: #f4f4f4;
 }
@@ -178,6 +177,8 @@ header{
     margin-bottom: 15%;
 }
 
+/*hotel*/
+
 .hotel-feature {
     margin-bottom: 5px;
 }
@@ -191,6 +192,7 @@ header{
     width: 100%;
 }
 
+/* footer */
 footer {
     background-color: orange;
 }
@@ -216,6 +218,10 @@ footer {
 .footer-p {
     margin-left: 30px;
 }
+
+/*footer*/
+
+
 @media only screen and (max-width: 767px) {
 
     section{padding:30px 0;}
@@ -271,6 +277,8 @@ footer {
     }
 
 }
+
+/* navigation*/
 
 nav{
     width:100%;
