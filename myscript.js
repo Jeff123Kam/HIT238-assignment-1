@@ -1,19 +1,3 @@
-function myFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
-
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-    } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-    }
-}
-
 function initMap() {
     var location = {lat: -12.463440, lng: 130.845642};
     var map = new google.maps.Map(document.getElementById("map"),{
@@ -25,5 +9,55 @@ function initMap() {
         map: map
     })
 }
+
+let sliderImages = document.querySelectorAll(".slide"),
+    arrowLeft = document.querySelector("#arrow-left"),
+    arrowRight = document.querySelector("#arrow-right"),
+    current = 0;
+
+
+function reset() {
+    for (let i = 0; i < sliderImages.length; i++) {
+        sliderImages[i].style.display = "none";
+    }
+}
+
+
+function startSlide() {
+    reset();
+    sliderImages[0].style.display = "block";
+}
+
+
+function slideLeft() {
+    reset();
+    sliderImages[current - 1].style.display = "block";
+    current--;
+}
+
+
+function slideRight() {
+    reset();
+    sliderImages[current + 1].style.display = "block";
+    current++;
+}
+
+
+arrowLeft.addEventListener("click", function() {
+    if (current === 0) {
+        current = sliderImages.length;
+    }
+    slideLeft();
+});
+
+
+arrowRight.addEventListener("click", function() {
+    if (current === sliderImages.length - 1) {
+        current = -1;
+    }
+    slideRight();
+});
+
+startSlide();
 
 
