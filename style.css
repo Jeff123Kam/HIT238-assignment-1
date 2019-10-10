@@ -16,7 +16,7 @@ body,
 
 .slide {
     background-size: cover;
-    background-position: center;
+    background-position: fixed;
     background-repeat: no-repeat;
     background-color: #f4f4f4;
 }
@@ -75,6 +75,7 @@ body,
     border-color: transparent transparent transparent #fff;
     right: 0;
     margin-right: 30px;
+    margin-top: 80px;
 }
 
 .slide3 h3 {
@@ -153,4 +154,53 @@ section {
 
 .button-attraction {
     font-size: 20px;
+}
+
+
+.main-nav{
+    width:100%;
+    background: lightblue;
+    text-align: center;
+    position: relative;
+    height: 80px;
+    top: 0;
+    margin-bottom: -40px;
+
+}
+.main-ul{
+    width:100%;
+    margin: 0 auto;
+    padding: 0;
+    font-size:18px;
+}
+
+.main-ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+.main-ul li:hover{
+    background: green;
+}
+
+.main-ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-weight:500;
+}
+
+
+/*Small phones: from 0 to 480px */
+@media (min-width:768px) {
+    .main-nav {
+        height: 130px;
+
+    }
+
+    .main-ul li a{
+        font-size: 30px;
+    }
+
+
 }
