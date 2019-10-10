@@ -186,9 +186,6 @@ h3 {
     .hero-text-box {padding:0 4%;}
 
     .col{width:100%;}
-    
-
-
 
     .active{
         display: block;
@@ -196,8 +193,15 @@ h3 {
 
 }
 
+.bt{
+    display: block;
+    max-width: 300px;
+    margin: auto;
+}
 
-
+li{
+    list-style: none;
+}
 
 
 @media only screen and (max-width: 480px){
@@ -207,7 +211,6 @@ h3 {
 
 
     h2{font-size: 120%;}
-
 
 }
 
@@ -266,3 +269,4 @@ h3 {
 
 }
 
+=
