@@ -68,12 +68,6 @@ h3 {
 
 /*----PARAGRAPHS----*/
 
-.long-copy{
-    line-height: 145%;
-    width: 70%;
-    margin-left: 15%;
-}
-
 .box p{
     font-size: 90%;
     line-height: 140%;
@@ -100,33 +94,12 @@ h3 {
     margin-top: -5px;
 }
 
-/* Header */
-
-.text-box{
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
 
 
 /* Features */
 
-.section-features .long-copy{
+.section-features {
     margin-bottom: 40px;
-}
-
-.good{
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
-
-}
-.video {
-    display: block;
-    margin: 0 auto;
 }
 
 
@@ -145,22 +118,6 @@ h3 {
     margin-top: 70px;
 }
 
-.screen-1 {
-    margin-top: 25px;
-    width: 50%;
-}
-
-.screen-2{
-    width: 47%;
-}
-
-
-.text-wrapper h1{
-    text-align: center;
-    color: #ffffff;
-    font-size: 10vw;
-
-}
 
 .box img {
     width: 200px;
@@ -268,5 +225,3 @@ li{
 
 
 }
-
-=
