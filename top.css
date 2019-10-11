@@ -225,3 +225,35 @@ li{
 
 
 }
+
+
+#wrapper {
+    width: 600px;
+    margin: 0 auto;
+}
+
+#dollarsign {
+    font-size: 60px;
+}
+
+#centerbox {
+    padding: 40px;
+}
+
+.symInput {
+    text-transform: uppercase;
+    padding: 11px;
+    border: solid 1px;
+    vertical-align: top;
+}::-webkit-input-placeholder {
+     text-transform: none;
+ }
+:-moz-placeholder { 
+    text-transform: none;
+}
+::-moz-placeholder {
+    text-transform: none;
+}
+:-ms-input-placeholder {
+    text-transform: none;
+}
