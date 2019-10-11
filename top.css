@@ -248,7 +248,7 @@ li{
 }::-webkit-input-placeholder {
      text-transform: none;
  }
-:-moz-placeholder { 
+:-moz-placeholder {
     text-transform: none;
 }
 ::-moz-placeholder {
@@ -257,3 +257,16 @@ li{
 :-ms-input-placeholder {
     text-transform: none;
 }
+
+@media only screen and (max-width: 700px){
+    #wrapper {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    #dollarsign {
+        font-size: 10px;
+    }
+
+}
+
