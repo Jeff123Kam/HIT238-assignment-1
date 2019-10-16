@@ -276,38 +276,16 @@ function sortList() {
 
 // currency converter //
 
-$(document).ready(function() {
-    $("#base").focus(function() {
-        $("#user").empty();
-        $('.symInput').val("");
-        $('#quote').html("<p>Quote will appear here.</p>");
-    });
+function CalcG(){
+    x = document.getElementById("base").value;
+    y = document.getElementById("target").value;
+    document.getElementById("target").value = x * 1.5;
 
-    var getQuote = function() {
-        var baseSymbol = $('#base').val().toUpperCase();
-        var targetSymbol = $('#target').val().toUpperCase();
+}
 
-        if (baseSymbol === '' || baseSymbol === '') {
-            $('#quote').html('<p>Enter a symbol first</p>');
-        } else {
-            $.getJSON("https://api.fixer.io/latest?base=" + baseSymbol + "&symbols=" + targetSymbol, function(json) {
+function CalcK(){
+    x = document.getElementById("target").value;
+    y = document.getElementById("base").value;
+    document.getElementById("target").value = x / 1.5;
 
-                if(typeof json.rates[targetSymbol] === 'undefined') {
-                    $('#quote').html('<p>Symbol not found!</p>');
-                } else {
-                    $('#quote').html('<p>' + targetSymbol + ' ' + json.rates[targetSymbol] + '</p>');
-                }
-            });
-        }
-    }
-
-    $("#search").on("click", function() {
-        getQuote();
-    });
-
-    $('.symInput').keyup(function(event) {
-        if (event.keyCode == 13) {
-            getQuote();
-        }
-    });
-})
+}

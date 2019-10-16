@@ -34,9 +34,9 @@
     </header>
     <div id="centerbox">
         <section id="fetch">
-            <input type="text" placeholder="your Currency" class="symInput" id="base" />
+            <input placeholder="USD" class="symInput" id="base" oninput="CalcG()" onchange="CalcG()"  type="number" />
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <input type="text" placeholder="AUD" class="symInput" id="target" />
+            <input type="number" placeholder="AUD" class="symInput" id="target" oninput="CalcK()" onchange="CalcK()" />
             <a href="#"><p><button id="search">Get Conversion Rate</button></p></a>
         </section>
     </div>
