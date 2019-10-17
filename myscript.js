@@ -1,3 +1,5 @@
+
+//Map//
 function initMap() {
     var location = {lat: -12.463440, lng: 130.845642};
     var map = new google.maps.Map(document.getElementById("map"),{
@@ -201,6 +203,8 @@ function initMap() {
         infoWindow12.open(map,marker12);
     });
 }
+
+//sider//
 
 let sliderImages = document.querySelectorAll(".slide"),
     arrowLeft = document.querySelector("#arrow-left"),
