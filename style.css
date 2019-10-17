@@ -122,38 +122,8 @@ h2,h3:after {
     margin-top: 30px
 }
 
-.hotel{
-    height: 100px;
-    width: 100px;
-}
 section {
     padding: 80px 0;
-}
-
-.icon-small {
-    display: inline-block ;
-    color: #e67e22;
-    width: 30px;
-    text-align: center;
-    font-size: 120%;
-    margin-right: 10px;
-    /* secrets to align text and icon*/
-    line-height: 120%;
-    vertical-align: middle;
-    margin-top: -5px;
-}
-
-.hotel-feature {
-    margin-bottom: 5px;
-}
-
-.flight{
-    height: 100px;
-    width: 100px;
-}
-
-.button-attraction {
-    font-size: 20px;
 }
 
 
